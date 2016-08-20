@@ -1,3 +1,7 @@
 html, body{ padding: 0px; margin: 0px;  background: #444;}
 	h1{ text-align: center;  color: #DDD; }
-#panel { position: fixed; top: 0px, left: 0px; background: #CCC; color: #000;}
+.panel { position: fixed; top: 0px; left: 0px; background: #CCC; color: #000; width: 100%; margin: 0px;}
+.panel li {display: inline;}
+.panel li a{text-decoration: none; color: #000; margin-right: 3px; }
+
+
