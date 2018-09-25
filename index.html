@@ -28,7 +28,7 @@
 	
 	<canvas id="canv" style="display: block;">Ваш браузер устарел, обновитесь.</canvas>
 	<div class="panel">
-		<button id="f_clear" onclick=f_clear()>Очисть</button>
+		<button id="f_clear" onclick=f_clear()>Очистить</button>
 		<button id="btn_schol" onclick=vireficate()>Научить</button>
 		<button id="btn_build" onclick=builder()>Распознать</button>
 	
@@ -56,8 +56,8 @@
 			}
 
 			this.drawCell = function(x, y, w, h) {
-				ctx.fillStyle = 'blue';
-				ctx.strokeStyle = 'blue';
+				ctx.fillStyle = 'black';
+				ctx.strokeStyle = 'black';
 				ctx.lineJoin = 'miter';
 				ctx.lineWidth = 1;
 				ctx.rect(x, y, w, h);
@@ -150,8 +150,8 @@
 			el.addEventListener('mousemove', function(e) {
 				if( is_mouse_down )
 				{
-					ctx.fillStyle = 'red';
-					ctx.strokeStyle = 'red';
+					ctx.fillStyle = 'black';
+					ctx.strokeStyle = 'black';
 					ctx.lineWidth = pixel;
 
 					ctx.lineTo(e.offsetX, e.offsetY);
@@ -170,10 +170,6 @@
 		let vector = [];
 		let net = null;
 		let train_data = [];
-
-
-
-
 
 		const d = new DCanvas(document.getElementById('canv'));
 
