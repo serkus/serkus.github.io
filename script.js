@@ -18,7 +18,7 @@ var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 5000);
 camera.position.set(0, 0, 1000);
 var light = new  THREE.AmbientLight(0xffffff);
 scena.add(light);
-var geometry = new THREE.BoxGeometry(500, 500, 500,10000,10000,10000);
+var geometry = new THREE.BoxGeometry(500, 500, 500,1000,1000,1000);
 var matealy = new THREE.MeshBasicMaterial({color: 0x00FF00, wireframe: true});
 var mash = new THREE.Mesh(geometry, matealy);
 scena.add(mash);
